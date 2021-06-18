@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
 import Filiar from './Components/Pages/Filiar-se';
 import Home from './Components/Pages/Home';
 import Sobre from './Components/Sobre';
-
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -16,10 +16,10 @@ function App() {
       <Route exact path='/' component={Home} />
       <Route path='/sobre' component={Sobre} />
       <Route path='/filiar-se' component={Filiar} />
-      
       </div>
       </Switch>
       </Router>   
+      <Footer />
     </div>
   );
 }
